@@ -9,40 +9,105 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:300,400,500,700|Open+Sans:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+	  function openSlideMenu(){
+	    document.getElementById('menu').style.width = '250px';
+	    document.getElementById('content').style.marginLeft = '250px';
+	  }
+	  function closeSlideMenu(){
+	    document.getElementById('menu').style.width = '0';
+	    document.getElementById('content').style.marginLeft = '0';
+	  }
+	</script>
 
 </head>
 <body>
-
-	<div class="container">
-		<div class="card-white" id="introduction">
-			<h1>Bastien Chappis</h1>
-			<img src="images/Bastien Chappis_Profile Picture-05.png" class="img-circle" alt="Profile picture">
-			<p>
-			Enterprising, investigative and committed student with increasing expertise in both
-			marketing and data-science domains. Possessing strong practical competencies
-			rooted in substantial training as a neuroscientist.
-			</p>
-			<a href="http://linkedin.com" class="btn-blue">Visit my profile</a>	
+	<div id="content">
+		<span class="slide">
+			<a href="#" onclick="openSlideMenu()">
+				<i class="fas fa-bars"></i>
+			</a>
+		</span>
+		<div id="menu" class="nav">
+			<a href="#" class="close" onclick="closeSlideMenu()">
+				<i class="fas fa-times"></i>
+			</a>
+			<a href="#introduction">About me</a>
+			<a href="#education">Education</a>
+			<a href="#experiences">Experience</a>
+			<a href="#references">References</a>
+			<a href="#skills">Skills</a>
+			<a href="#interests">interests</a>	
 		</div>
 
-		<div class="card-white">
-			<h2>I'm passionate about gardening</h2>
-			<p>balbalbalbablablaerezregnzo</p>
-		</div>
+		<div class="container">
+			<div class="card-white" id="introduction">
+				<h1>Bastien Chappis</h1>
+				<img src="images/profile_picture.png" class="img-circle" alt="Profile picture">
+				<h2>About me</h2>
+				<p>
+				Enterprising, investigative and committed student with increasing expertise in both
+				marketing and data-science domains. Possessing strong practical competencies
+				rooted in substantial training as a neuroscientist.
+				</p>
+				<a href="https://fr.linkedin.com/in/bastienchappis" class="btn-blue">Visit my profile</a>	
+			</div>
 
-		<div class="card-white">
-			<h2>I love sport</h2>
-			<p>because its very</p>	
-		</div>
+			<div class="card-white" id="education">
+				<h2>Education</h2>
+				<p>balbalbalbablablaerezregnzo</p>
+			</div>
 
-		<div class="card-white">
-			<ul class="list-inline">
-				<li><a href="https://www.lewagon.com/fr" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-				<li>de deux</li>
-				<li>de trois</li>
-			</ul>
+			<div class="card-white-left" id="experiences">
+				<h2>Experience</h2>
+				<p>because its very</p>
+				<ul>
+					<li><img class="img-icon" src="images/univ_paris.png">
+						<p>i first started by the university of blaboa</p></li>
+					<li><img class="img-icon" src="images/univ_bordeaux.png"></li>
+					<li><img class="img-icon" src="images/univ_singapore.png"></li>
+					<li><img class="img-icon" src="images/univ_grenoble.png"></li>
+				</ul>	
+			</div>
+
+			<div class="card-white" id="references">
+				<h2>References</h2>
+				<p>because its very</p>	
+			</div>
+
+			<div class="card-white" id="skills">
+				<h2>Skills</h2>
+				<p>because its very</p>	
+			</div>
+
+			<div class="card-white" id="interests">
+				<h2>Interests</h2>
+				<p>because its very</p>	
+			</div>
+
+			<div class="card-white">
+				<ul class="list-inline">
+					<li><a href="#" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					</li>
+					<li><a href="#" target="_blank">
+						<i class="fab fa-github-alt"></i>
+					</a>
+					</li>
+					<li><a href="#" target="_blank">
+						<i class="fas fa-plus"></i>
+					</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
+
+
+
+
+
 	
 </body>
 </html>
